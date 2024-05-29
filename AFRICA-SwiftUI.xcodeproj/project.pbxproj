@@ -25,6 +25,10 @@
 		ECD73A2E2C07A0A000E11100 /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD73A2A2C07A09F00E11100 /* covers.json */; };
 		ECD73A2F2C07A0A000E11100 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD73A2B2C07A0A000E11100 /* videos.json */; };
 		ECD73A302C07A0A000E11100 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = ECD73A2C2C07A0A000E11100 /* locations.json */; };
+		ECD73A342C07A3DE00E11100 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A332C07A3DE00E11100 /* VideoListView.swift */; };
+		ECD73A362C07A41900E11100 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A352C07A41900E11100 /* MapView.swift */; };
+		ECD73A382C07A44600E11100 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A372C07A44600E11100 /* GalleryView.swift */; };
+		ECD73A3A2C07A46D00E11100 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A392C07A46D00E11100 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,11 @@
 		ECD73A2A2C07A09F00E11100 /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
 		ECD73A2B2C07A0A000E11100 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		ECD73A2C2C07A0A000E11100 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		ECD73A312C07A26500E11100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECD73A332C07A3DE00E11100 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+		ECD73A352C07A41900E11100 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ECD73A372C07A44600E11100 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		ECD73A392C07A46D00E11100 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +88,10 @@
 		ECD73A042C079AF000E11100 /* AFRICA-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				ECD73A312C07A26500E11100 /* Info.plist */,
 				ECD73A282C07A08500E11100 /* Data */,
 				ECD73A132C079F8F00E11100 /* Video */,
-				ECD73A052C079AF000E11100 /* AFRICA_SwiftUIApp.swift */,
-				ECD73A072C079AF000E11100 /* ContentView.swift */,
+				ECD73A322C07A37500E11100 /* App */,
 				ECD73A092C079AF200E11100 /* Assets.xcassets */,
 				ECD73A0B2C079AF200E11100 /* Preview Content */,
 			);
@@ -123,6 +132,19 @@
 				ECD73A2B2C07A0A000E11100 /* videos.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		ECD73A322C07A37500E11100 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECD73A052C079AF000E11100 /* AFRICA_SwiftUIApp.swift */,
+				ECD73A072C079AF000E11100 /* ContentView.swift */,
+				ECD73A332C07A3DE00E11100 /* VideoListView.swift */,
+				ECD73A352C07A41900E11100 /* MapView.swift */,
+				ECD73A372C07A44600E11100 /* GalleryView.swift */,
+				ECD73A392C07A46D00E11100 /* MainView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD73A082C079AF000E11100 /* ContentView.swift in Sources */,
+				ECD73A3A2C07A46D00E11100 /* MainView.swift in Sources */,
+				ECD73A362C07A41900E11100 /* MapView.swift in Sources */,
 				ECD73A062C079AF000E11100 /* AFRICA_SwiftUIApp.swift in Sources */,
+				ECD73A342C07A3DE00E11100 /* VideoListView.swift in Sources */,
+				ECD73A382C07A44600E11100 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,11 +372,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AFRICA-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AFRICA-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +401,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AFRICA-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AFRICA-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
