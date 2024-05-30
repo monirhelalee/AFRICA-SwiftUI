@@ -38,6 +38,7 @@
 		ECD73A4C2C09038400E11100 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A4B2C09038400E11100 /* HeadingView.swift */; };
 		ECD73A4E2C09058A00E11100 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A4D2C09058A00E11100 /* InsetGalleryView.swift */; };
 		ECD73A502C09098600E11100 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A4F2C09098600E11100 /* InsetFactView.swift */; };
+		ECD73A522C090C8700E11100 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A512C090C8700E11100 /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		ECD73A4B2C09038400E11100 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		ECD73A4D2C09058A00E11100 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		ECD73A4F2C09098600E11100 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		ECD73A512C090C8700E11100 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				ECD73A4B2C09038400E11100 /* HeadingView.swift */,
 				ECD73A4D2C09058A00E11100 /* InsetGalleryView.swift */,
 				ECD73A4F2C09098600E11100 /* InsetFactView.swift */,
+				ECD73A512C090C8700E11100 /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				ECD73A4A2C08FF1F00E11100 /* AnimalDetailView.swift in Sources */,
 				ECD73A482C08F98F00E11100 /* AnimalModel.swift in Sources */,
 				ECD73A362C07A41900E11100 /* MapView.swift in Sources */,
+				ECD73A522C090C8700E11100 /* InsetMapView.swift in Sources */,
 				ECD73A062C079AF000E11100 /* AFRICA_SwiftUIApp.swift in Sources */,
 				ECD73A342C07A3DE00E11100 /* VideoListView.swift in Sources */,
 				ECD73A382C07A44600E11100 /* GalleryView.swift in Sources */,
