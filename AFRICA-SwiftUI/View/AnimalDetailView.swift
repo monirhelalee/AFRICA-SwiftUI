@@ -18,10 +18,13 @@ struct AnimalDetailView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
                 // MARK: - Hero Image
+
                 Image(animal.image)
                     .resizable()
                     .scaledToFit()
+
                 // MARK: - Title
+
                 Text(animal.name.uppercased())
                     .font(.largeTitle)
                     .fontWeight(.heavy)
@@ -31,29 +34,42 @@ struct AnimalDetailView: View {
                     .background(
                         Color.accentColor
                             .frame(height: 6)
-                            .offset(y:24)
+                            .offset(y: 24)
                     )
+
                 // MARK: - Headline
+
                 Text(animal.headline)
                     .font(.headline)
-                
                     .multilineTextAlignment(.leading)
-                    
                     .foregroundColor(.accentColor)
                     .padding(.horizontal)
+
                 // MARK: - Gallery
-                Group{
-                   HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in pictures")
+
+                Group {
+                    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in pictures")
                     InsetGalleryView(animal: animal)
-                }//:group
+                } //: group
                 .padding(.horizontal)
+
                 // MARK: - Fact
-                Group{
+
+                Group {
                     HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
                     InsetFactView(animal: animal)
-                }//: Group
+                } //: Group
                 .padding(.horizontal)
+
                 // MARK: - Description
+
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    Text(animal.description)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/ .leading/*@END_MENU_TOKEN@*/)
+                        .layoutPriority(1)
+                } //: Group
+                .padding(.horizontal)
 
                 // MARK: - Map
 
