@@ -48,7 +48,11 @@ struct AnimalDetailView: View {
                 }//:group
                 .padding(.horizontal)
                 // MARK: - Fact
-
+                Group{
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    InsetFactView(animal: animal)
+                }//: Group
+                .padding(.horizontal)
                 // MARK: - Description
 
                 // MARK: - Map
