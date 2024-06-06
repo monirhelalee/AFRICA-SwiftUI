@@ -21,23 +21,25 @@ struct MotionAnimationView: View {
     }
 
     // 2. random size
-    func randomSize() -> CGFloat{
-        return CGFloat(Int.random(in: 10...300))
+    func randomSize() -> CGFloat {
+        return CGFloat(Int.random(in: 10 ... 300))
     }
-    
+
     // 3. random scale
-    func randomScale() -> CGFloat{
-        return CGFloat(Double.random(in: 0.1...2.0))
+    func randomScale() -> CGFloat {
+        return CGFloat(Double.random(in: 0.1 ... 2.0))
     }
-    
+
     // 4. random speed
-    func randomSpeed() -> Double{
-        return Double.random(in: 0.025...1.0)
+    func randomSpeed() -> Double {
+        return Double.random(in: 0.025 ... 1.0)
     }
+
     // 5. random delay
-    func randomDelay() -> Double{
-        return Double.random(in: 0...2)
+    func randomDelay() -> Double {
+        return Double.random(in: 0 ... 2)
     }
+
     // MARK: - Body
 
     var body: some View {
