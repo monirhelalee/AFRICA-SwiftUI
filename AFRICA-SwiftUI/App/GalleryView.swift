@@ -20,7 +20,16 @@ struct GalleryView: View {
 //    ]
     // Efficient grid defination
 
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+//    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    // Dynamic grid layout
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Double = 3.0
+
+    // MARK: - Function
+
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
+    }
 
     // MARK: - Body
 
@@ -37,6 +46,14 @@ struct GalleryView: View {
                         Circle().stroke(.white, lineWidth: 8)
                     )
 
+                // MARK: - Slider
+
+                Slider(value: $gridColumn, in: 2 ... 5, step: 1)
+                    .padding(.horizontal)
+                    .onChange(of: gridColumn, initial: false) {
+                        gridSwitch()
+                    }
+
                 // MARK: - Grid
 
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
@@ -48,13 +65,18 @@ struct GalleryView: View {
                             .overlay(
                                 Circle()
                                     .stroke(
-                                        .white, lineWidth: 1)
+                                        .white, lineWidth: 1
+                                    )
                             )
                             .onTapGesture {
                                 selectedAnimal = item.image
                             }
                     } //: loop
                 } //: Grid
+                .animation(.easeInOut)
+                .onAppear(perform: {
+                    gridSwitch()
+                })
             } //: Vstack
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
