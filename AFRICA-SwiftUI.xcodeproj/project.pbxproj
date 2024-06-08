@@ -16,6 +16,8 @@
 		EC7426F02C135163005B1DA0 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7426EF2C135163005B1DA0 /* AnimalGridItemView.swift */; };
 		EC8598D02C145F820019F76F /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8598CF2C145F820019F76F /* Stickers.xcassets */; };
 		EC8598D42C145F820019F76F /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EC8598CD2C145F810019F76F /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC8598DA2C1463A60019F76F /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8598D92C1463A60019F76F /* CreditsView.swift */; };
+		EC8598DD2C14B02F0019F76F /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8598DC2C14B02F0019F76F /* CenterModifier.swift */; };
 		ECB5AEA82C121B2F00C4EBA2 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5AEA72C121B2F00C4EBA2 /* MotionAnimationView.swift */; };
 		ECD73A062C079AF000E11100 /* AFRICA_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A052C079AF000E11100 /* AFRICA_SwiftUIApp.swift */; };
 		ECD73A082C079AF000E11100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD73A072C079AF000E11100 /* ContentView.swift */; };
@@ -87,6 +89,8 @@
 		EC8598CD2C145F810019F76F /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8598CF2C145F820019F76F /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		EC8598D12C145F820019F76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8598D92C1463A60019F76F /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		EC8598DC2C14B02F0019F76F /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		ECB5AEA72C121B2F00C4EBA2 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		ECD73A022C079AF000E11100 /* AFRICA-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFRICA-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD73A052C079AF000E11100 /* AFRICA_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFRICA_SwiftUIApp.swift; sourceTree = "<group>"; };
@@ -153,6 +157,14 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		EC8598DB2C14B0060019F76F /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				EC8598DC2C14B02F0019F76F /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		ECD739F92C079AF000E11100 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +186,7 @@
 		ECD73A042C079AF000E11100 /* AFRICA-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EC8598DB2C14B0060019F76F /* Modifier */,
 				EC278C0E2C0CD4230018B8D2 /* Helper */,
 				ECD73A422C087DAA00E11100 /* Extension */,
 				ECD73A3F2C087A0C00E11100 /* Model */,
@@ -253,6 +266,7 @@
 				EC4534542C117A2C0079D1D4 /* MapAnnotationView.swift */,
 				ECB5AEA72C121B2F00C4EBA2 /* MotionAnimationView.swift */,
 				EC7426EF2C135163005B1DA0 /* AnimalGridItemView.swift */,
+				EC8598D92C1463A60019F76F /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,8 +424,10 @@
 				EC7426F02C135163005B1DA0 /* AnimalGridItemView.swift in Sources */,
 				ECD73A4E2C09058A00E11100 /* InsetGalleryView.swift in Sources */,
 				EC278C122C0EB2480018B8D2 /* LocatiionModel.swift in Sources */,
+				EC8598DA2C1463A60019F76F /* CreditsView.swift in Sources */,
 				ECD73A442C08814700E11100 /* CodableBundleExtension.swift in Sources */,
 				ECB5AEA82C121B2F00C4EBA2 /* MotionAnimationView.swift in Sources */,
+				EC8598DD2C14B02F0019F76F /* CenterModifier.swift in Sources */,
 				ECD73A4C2C09038400E11100 /* HeadingView.swift in Sources */,
 				EC278C0D2C0CD2AA0018B8D2 /* VideoPlayerView.swift in Sources */,
 			);
